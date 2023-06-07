@@ -108,3 +108,8 @@ differentiate: ['Poorly differentiated' 'Moderately differentiated' 'Well differ
 Grade: ['3' '2' '1' ' anaplastic; Grade IV'], nunique: 4
 
 A Stage: ['Regional' 'Distant'], nunique: 2
+
+
+
+# 2006 - 2010 / first examination
+# 2017 / follow-up
