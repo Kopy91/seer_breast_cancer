@@ -1,2 +1,110 @@
-test text commit
-test
+About this file
+
+This dataset was uploaded to U-BRITE for "AI against CANCER DATA SCIENCE HACKATHON"
+https://cancer.ubrite.org/hackathon-2021/
+
+
+About Dataset
+
+This dataset of breast cancer patients was obtained from the 2017 November update of the SEER Program of the NCI, 
+which provides information on population-based cancer statistics. 
+The dataset involved female patients with infiltrating duct and 
+lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. 
+Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients 
+whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
+
+
+Licence: Attribution 4.0 International (CC BY 4.0) 
+
+Variables:
+
+{'Age' : 'int64',
+'Race' : 'category',
+'Marital Status' : 'category',
+'T Stage' : 'category', 
+'N Stage' : 'category',
+'6th Stage' : 'category',
+'differentiate' : 'category',
+'Grade' : 'category',
+'A Stage' : 'category', 
+'Tumor Size' : 'int64',
+'Estrogen Status' : 'category',
+'Progesterone Status' : 'category',
+'Regional Node Examined' : 'int64',
+'Reginol Node Positive' : 'int64',
+'Survival Months' : 'int64',
+'Status' : 'category'}
+
+T Stage = 
+T1: Original tumor diameter is less than or equal to 2 centimeters
+T2: Original tumor diameter is between 2 and 5 centimeters
+T3: Original tumor diameter is greater than 5 centimeters
+T4: Original tumor has invaded other organs, like the chest wall or skin
+
+N Stage = 
+N1: Cancer has spread to fewer than 3 lymph nodes located
+on the underarm or has spread to any number of lymph nodes 
+located near the breastbone (internal mammary lymph nodes)
+N2: Cancer has spread to between 4 and 9 lymph nodes of 
+the underarm or has enlarged the lymph nodes of the 
+internal mammary area
+N3 (includes N3a, N3b, and N3c): Cancer has spread to greater 
+than 10 lymph nodes of the underarm, cancer has spread to lymph 
+nodes under the collarbone, cancer has spread to at least 1 underarm 
+lymph node and enlarged breast bone lymph nodes, cancer has spread 
+to at least 4 underarm lymph nodes and detected through biopsy to 
+have spread to the breast bone lymph nodes, OR cancer has spread 
+to lymph nodes above the collarbone on the same side of the body 
+as the cancer
+
+6th Stage =  
+Stage groups for breast cancer
+Doctors assign the stage of the cancer by combining the T, N, and M classifications
+
+'differentiate' and 'Grade' are connected = 
+Grade 1: Tumor cells and tissue looks most like healthy cells and tissue. 
+These are called well-differentiated tumors and are considered low grade.
+Grade 2: The cells and tissue are somewhat abnormal and are called 
+moderately differentiated. These are intermediate grade tumors.
+Grade 3: Cancer cells and tissue look very abnormal. These cancers are 
+considered poorly differentiated, since they no longer have an architectural 
+structure or pattern. Grade 3 tumors are considered high grade.
+Grade 4: These undifferentiated cancers have the most abnormal looking cells. 
+These are the highest grade and typically grow and spread faster than lower grade tumors.
+
+Tumor Size = millimeter
+
+Estrogen Status = 
+Created by combining information from Tumor marker 1 
+with information from CS site-specific factor 1
+
+Progesterone Status = 
+Created by combining information from Tumor marker 2, 
+with information from CS site-specific factor 2 
+
+Regional Node Examined = 
+Records the total number of regional lymph nodes that 
+were removed and examined by the pathologist.
+
+Survival Months = 
+Created using complete dates, including days, therefore 
+may differ from survival time calculated from year and month only. 
+
+Status = 
+Any patient that dies after the follow-up cut-off date is recorded 
+to be alive as of the cut-off date.
+
+
+
+T Stage : ['T1' 'T2' 'T3' 'T4'], nunique: 4
+
+N Stage: ['N1' 'N2' 'N3'], nunique: 3
+
+6th Stage: ['IIA' 'IIIA' 'IIIC' 'IIB' 'IIIB'], nunique: 5
+
+differentiate: ['Poorly differentiated' 'Moderately differentiated' 'Well differentiated'
+ 'Undifferentiated'], nunique: 4
+
+Grade: ['3' '2' '1' ' anaplastic; Grade IV'], nunique: 4
+
+A Stage: ['Regional' 'Distant'], nunique: 2
