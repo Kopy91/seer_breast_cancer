@@ -113,3 +113,15 @@ A Stage: ['Regional' 'Distant'], nunique: 2
 
 # 2006 - 2010 / first examination
 # 2017 / follow-up
+
+
+
+To_Dos:
+
+* Imputing und Outlier Detection
+* check tumor size: wie groß ist die Anzahl der Ausreißer, check model without outliers?
+* Zusammenhang: survival months und Ausreißer regional node und tumor size 
+* Estrogen Progesterone Infos zusammentragen
+* Unklarheiten zwischen Survival Months und Abstand Datenerhebung und Follow-up interpretieren
+* Vorbereitung ML Arbeitsschritte (Björn)
+
