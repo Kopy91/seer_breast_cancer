@@ -57,6 +57,9 @@ have spread to the breast bone lymph nodes, OR cancer has spread
 to lymph nodes above the collarbone on the same side of the body 
 as the cancer
 
+A Stage = 'regional', 'distant'
+Ordinal
+
 6th Stage =  
 Stage groups for breast cancer
 Doctors assign the stage of the cancer by combining the T, N, and M classifications
@@ -93,8 +96,6 @@ may differ from survival time calculated from year and month only.
 Status = 
 Any patient that dies after the follow-up cut-off date is recorded 
 to be alive as of the cut-off date.
-
-
 
 T Stage : ['T1' 'T2' 'T3' 'T4'], nunique: 4
 
