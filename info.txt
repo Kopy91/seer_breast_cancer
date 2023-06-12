@@ -123,6 +123,26 @@ To_Dos:
 * check tumor size: wie groß ist die Anzahl der Ausreißer, check model without outliers?
 * Zusammenhang: survival months und Ausreißer regional node und tumor size 
 * Estrogen Progesterone Infos zusammentragen
+        Receptors are proteins in cells that can attach to certain substances in the blood. 
+        To make the best decision for treating breast cancer, a test is conducted to check for 
+        hormone receptor status. This hormone receptor status is either positive or negative based 
+        on the receptors that attach to estrogen and progesterone hormones. Cancer that has estrogen 
+        receptors is called Estrogen Positive and cancer that has progesterone receptors is 
+        called Progesterone Positive. The hormone receptor is positive if the estrogen or 
+        progesterone or both are positive. Otherwise, the hormone receptor is negative. 
+        For positive hormone receptors, hormone therapy drugs can be used to lower estrogen levels. 
+        Breast cancer cells with positive hormone receptor status grow slowly compared to cells 
+        with negative hormone receptor status. 
+
+
+
+
+
+
 * Unklarheiten zwischen Survival Months und Abstand Datenerhebung und Follow-up interpretieren
 * Vorbereitung ML Arbeitsschritte (Björn)
 
+
+
+* Feature engineering ideas:
+ - rate of positive nodes per examined node (idea from Kaggle)
