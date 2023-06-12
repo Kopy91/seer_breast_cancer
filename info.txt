@@ -134,15 +134,9 @@ To_Dos:
         Breast cancer cells with positive hormone receptor status grow slowly compared to cells 
         with negative hormone receptor status. 
 
-
-
-
-
-
 * Unklarheiten zwischen Survival Months und Abstand Datenerhebung und Follow-up interpretieren
 * Vorbereitung ML Arbeitsschritte (Björn)
 
-
-
 * Feature engineering ideas:
  - rate of positive nodes per examined node (idea from Kaggle)
+ - 
