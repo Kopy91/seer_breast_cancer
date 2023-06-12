@@ -9,7 +9,6 @@ The target variable contains the values 'Alive' and 'Dead'. Any patient that die
 
 The data set consists of the following variables:
 
-TODO: description of every feature.
 * Age: Patient age in years.
 * Race: Race recode is based on the race variables and the American Indian/Native American IHS link variable. This recode should be used to link to the populations for white, black and other. It is independent of Hispanic ethnicity. For more information, see : http://seer.cancer.gov/seerstat/variables/seer/race_ethnicity.
 * Marital Status: This data item identifies the patient’s marital status at the time of diagnosis for the reportable tumor.
