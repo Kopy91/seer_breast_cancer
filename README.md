@@ -8,5 +8,8 @@ The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([ht
 
 TODO: description of every feature.
 
+# The Data Processing
+TODA: choice of the model, complete pipeline as image
+
 # Metrics
 TODO: show final confusion matrix and model results
