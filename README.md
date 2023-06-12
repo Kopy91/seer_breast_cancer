@@ -10,7 +10,7 @@ The target variable contains the values 'Alive' and 'Dead'. Any patient that die
 The data set consists of the following variables:
 
 * Age: Patient age in years.
-* Race: Race recode is based on the race variables and the American Indian/Native American IHS link variable. This recode should be used to link to the populations for white, black and other. It is independent of Hispanic ethnicity. For more information, see : http://seer.cancer.gov/seerstat/variables/seer/race_ethnicity.
+* Race: Race record is based on the race variables and the American Indian/Native American IHS link variable. This recode should be used to link to the populations for white, black and other. It is independent of Hispanic ethnicity. For more information, see : http://seer.cancer.gov/seerstat/variables/seer/race_ethnicity.
 * Marital Status: This data item identifies the patient’s marital status at the time of diagnosis for the reportable tumor.
 * T Stage: Classification of how large the primary tumor is in the breast and what its biomarkers are. For more information see http://seer.cancer.gov/seerstat/variables/seer/ajcc-stage/6th.
 * N Stage: Classification regarding the tumor spread to the lymph nodes and to, where, what size, and how many lymph nodes are positive. For more information see http://seer.cancer.gov/seerstat/variables/seer/ajcc-stage/6th.
