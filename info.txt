@@ -140,3 +140,32 @@ To_Dos:
 * Feature engineering ideas:
  - rate of positive nodes per examined node (idea from Kaggle)
  - 
+
+
+ 1. README:
+-Beschreibung der Variablen aus info-Datei einfügen (Björn)
+
+2. EDA:
+-About the dataset in README übertragen (Björn)
+-Boxplots: Anzahl der Outlier benennen (Björn)
+-Heat Map: Correlation differentiate-Grade (Björn) 
+-Informationen aus Pairplot rauslesen
+-Strukturieren
+-Resampling Part in ML überführen
+
+3. ML:
+-Baseline Modell wird DecisionTreeClassifier
+-Validierungskurven einfügen
+-Scaling von Florian RandomForestClassifier entfernen und mit Björn's Variante vergleichen
+-Suchräume der GridSearches ausweiten
+-Experimente mit Feature Importances für Optimierungen ausprobieren (z.B. die 10 unwichtigsten Features entfernen)
+-letzter Schritt: Finale Modellauswahl
+-Verhältnis untersuchte Lymphknoten zu positiven Lymphknoten als neues Feature probieren (Björn)
+-Survival Months als Test entfernen
+-Modell Interpretationsabschnitt: wichtigste Features graphisch darstellen, überlegen, wovon wir pdp-Plots haben wollen 
+- Progesterone Est Status kombinieren (Björn)
+
+4. Präsentation
+-vielleicht Latex-Präsentation anlegen
+
+Björn: EDA abschließenr
