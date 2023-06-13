@@ -30,7 +30,20 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 # The Data Processing
 TODO: choice of the model, complete pipeline as image
 
+After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
+All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
+
+
+
+
 # Metrics
 TODO: show final confusion matrix and model results
 
+test:
+![Alt text](Untitled-1.png)
+
 # Model Interpretation
+
+The model predicts survival rates from breast cancer.
+
+It is worth noticing, that ***
