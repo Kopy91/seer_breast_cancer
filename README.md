@@ -1,7 +1,15 @@
 # seer_breast_cancer
 
 # Goal
-The goal was to create a classifying model that is able to take the data of the patient and determine whether the model thinks the patient will survive or not and output how confident it is in such a prediction.
+The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
+
+# Requirements
+*python3
+*pandas
+*numpy
+*matplotlib
+*sklearn
+
 
 # The Data
 The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
