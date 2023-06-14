@@ -76,6 +76,7 @@ Grade 4: These undifferentiated cancers have the most abnormal looking cells.
 These are the highest grade and typically grow and spread faster than lower grade tumors.
 
 Tumor Size = millimeter
+Änderung!
 
 Estrogen Status = 
 Created by combining information from Tumor marker 1 
