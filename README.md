@@ -59,7 +59,7 @@ We compared different models, and choose a Random Forest Classifier with polynom
 ![Classification report](classification_report.png)
   
 # Model Interpretation
-We use our model to examine the influence of each feature on our predictions.
+We use our model to examine the influence of the features on our model.
 
 ![Proportions of features for prediction](feature_importances.png)
 
