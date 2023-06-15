@@ -1,4 +1,4 @@
-# seer_breast_cancer
+# Seer_Breast_Cancer
 
 # Goal
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
