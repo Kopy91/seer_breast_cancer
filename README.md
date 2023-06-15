@@ -4,7 +4,11 @@
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-[Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Pandas](https://pandas.pydata.org/)
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
 * Python3
 * pandas
 * numpy
