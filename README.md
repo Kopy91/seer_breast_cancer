@@ -4,17 +4,11 @@
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
-* [Pandas](https://pandas.pydata.org/)
-* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
-* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
-* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
-* Python3
-* pandas
-* numpy
-* matplotlib 
-* sklearn
-
+* [Python 3.11.4](https://www.python.org/downloads/release/python-3114/)
+* [Pandas 2.0.2](https://pandas.pydata.org/)
+* [Numpy 1.24.2](https://numpy.org/)
+* [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html))
+* [scikit-learn 1.2.2](https://scikit-learn.org/stable/)
 
 # The Data
 The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
