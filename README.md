@@ -1,7 +1,8 @@
 # Seer_Breast_Cancer
 
 # Goal
-The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
+The goal of this project was to create a prototype of a classification model that uses data from the SEER (Surveillance, Epidemiology, and End Results) dataset to classify the alive and death status of breast cancer patients and outputs how confident it is in such a prediction.
+
 
 # Requirements
 * [Python 3.11.4](https://www.python.org/downloads/release/python-3114/)
@@ -10,6 +11,8 @@ The goal was to create a classifying model that is able to take the data of the 
 * [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html)
 * [scikit-learn 1.2.2](https://scikit-learn.org/stable/)
 * [PDPbox 0.3.0](https://pdpbox.readthedocs.io/en/latest/)
+* for details see install instructions in Requirements.txt
+
 
 # The Data
 The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
@@ -36,7 +39,7 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 
 
 # Data Processing
-After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the RandomForest provided the best scoring in F1.
+After testing and optimizing multiple models with GridSearches (DecisionTreeClassifier, RandomForestClassifier, Logistic Regression and Support Vector Machine), the RandomForestClassifier provided the best scoring in F1.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
 Feature engineering:
 *  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
@@ -50,7 +53,7 @@ Feature engineering:
 
 
 # Metrics
-We compared different models, and choose a Random Forest Classifier with polynomial feature to degree two. 
+We compared different models, and chose a Random Forest Classifier with polynomial feature to degree two. 
 
 ![Comparison of models](Vergleich_der_Modelle.png)
 
@@ -59,7 +62,7 @@ We compared different models, and choose a Random Forest Classifier with polynom
 ![Classification report](classification_report.png)
   
 # Model Interpretation
-We use our model to examine the influence of the features on our model.
+We extract freature importances and use partial dependence plots to examine the influence of the features on our model.
 
 ![Proportions of features for prediction](feature_importances.png)
 
