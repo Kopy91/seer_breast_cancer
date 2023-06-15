@@ -56,7 +56,7 @@ We compared different models, and choose a Random Forest Classifier with polynom
 
 ![Confusion matrix](confusion_matrix.png)
 
-test:
+![Classification report](classification_report.png)
   
 # Model Interpretation
 We use our model to examine the influence of each feature on our predictions.
