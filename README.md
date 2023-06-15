@@ -1,7 +1,8 @@
 # Seer_Breast_Cancer
 
 # Goal
-The goal of this project was to create a prototype of a classification model that uses data from the SEER (Surveillance, Epidemiology, and End Results) dataset to classify the alive and death status of breast cancer patients and outputs how confident it is in such a prediction.
+The goal of this project was to create a prototype of a classification model that uses data from the SEER (Surveillance, Epidemiology, and End Results) dataset to predict the status (alive or dead) of breast cancer patients.
+Scoring results in F1 and recall were the deciding factor for which model will be used and optimized.
 
 
 # Requirements
@@ -14,11 +15,11 @@ The goal of this project was to create a prototype of a classification model tha
 * for details see install instructions in requirements.txt
 
 
-# The Data
-The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
+# Dataset
+The data is from the aggle website [Seer Breast Cancer Data - Labeled](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer). It is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
 The target variable contains the values 'Alive' and 'Dead'. Any patient that died after the follow-up cut-off in 2017 was recorded to be alive as of the cut-off date. 
 
-The data set consists of the following variables:
+The dataset consists of the following variables:
 
 * Age: Patient age in years.
 * Race: Race record is based on the race variables and the American Indian/Native American IHS link variable. This recode should be used to link to the populations for white, black and other. It is independent of Hispanic ethnicity. For more information, see : http://seer.cancer.gov/seerstat/variables/seer/race_ethnicity.
@@ -39,20 +40,20 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 
 
 # Data Processing
-After testing and optimizing multiple models with GridSearches (DecisionTreeClassifier, RandomForestClassifier, Logistic Regression and Support Vector Machine), the RandomForestClassifier provided the best scoring in F1.
+After testing and optimizing multiple models with GridSearches (DecisionTreeClassifier, RandomForestClassifier, Logistic Regression and Support Vector Machine), the RandomForestClassifier provided the best scoring combination in F1 and recall.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
 Feature engineering:
 *  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
-*  one hot encoding nominal categorical features
+*  one-hot-encoding nominal categorical features
 *  relabeling ordinal categorical features
 *  scaling for polynomial features
 *  creating polynomial features
-*  fitting/predicting our random forest model
+*  fitting/predicting RandomForest model
 
 ![Our data flow](graphs/pipeline.png)
 
 # Metrics
-We compared different models, and chose a Random Forest Classifier with polynomial feature to degree two. 
+We compared different models and chose a Random Forest Classifier with polynomial features of second degree. 
 
 <<<<<<< HEAD
 ![Comparison of models](graphs/Vergleich_der_Modelle.png)
@@ -62,7 +63,7 @@ We compared different models, and chose a Random Forest Classifier with polynomi
 ![Classification report](graphs/classification_report.png)
   
 # Model Interpretation
-We extract feature importances and use partial dependence plots to examine the influence of selected features on our target variable.
+Extracting feature importances and using partial dependence plots to examine the influence of selected features on predictions.
 
 ![Proportions of features for prediction](graphs/feature_importances.png)
 
