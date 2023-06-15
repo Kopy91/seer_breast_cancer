@@ -1,14 +1,19 @@
-# seer_breast_cancer
+# Seer_Breast_Cancer
 
 # Goal
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-*python3
-*pandas
-*numpy
-*matplotlib
-*sklearn
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Pandas](https://pandas.pydata.org/)
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* [Python 3.11.4]([[https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)))
+* Python3
+* pandas
+* numpy
+* matplotlib 
+* sklearn
 
 
 # The Data
@@ -35,23 +40,38 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 * Status: ['Alive', 'Dead'] Any patient that dies after the follow-up cut-off date is recoded to be alive as of the cut-off date.
 
 
-# The Data Processing
-TODO: choice of the model, complete pipeline as image
-
-After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
+# Data Processing
+After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the RandomForest provided the best scoring in F1.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
+Feature engineering:
+*  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
+*  one hot encoding nominal categorical features
+*  relabeling ordinal categorical features
+*  scaling for polynomial features
+*  creating polynomial features
+*  fitting/predicting our random forest model
 
-
+![Our data flow](pipeline.png)
 
 
 # Metrics
-TODO: show final confusion matrix and model results
+We compared different models, and choose a Random Forest Classifier with polynomial feature to degree two. 
+
+![Comparison of models](Vergleich_der_Modelle.png)
+
+![Confusion matrix](confusion_matrix.png)
 
 test:
-![Alt text](Untitled-1.png)
-
+  
 # Model Interpretation
+We use our model to examine the influence of each feature on our predictions.
 
-The model predicts survival rates from breast cancer.
+![Proportions of features for prediction](feature_importances.png)
 
-It is worth noticing, that ***
+![Partial Dependence Plot for SurvivalMonths](pdp_survivalmonths.png)
+
+![Partial Dependence Plot for Node_Exam_Pos_Rate](pdp_node_exam_pos_rate.png)
+
+![Partial Dependence Plot for RegionalNodePositive](pdp_regionalnodepositive.png)
+
+![Partial Dependence Plot for TumorSize](pdp_tumor_size.png)
