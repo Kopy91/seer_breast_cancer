@@ -47,7 +47,7 @@ All necessary steps were included in Pipelines (transforming columns, encoding a
 # Metrics
 TODO: show final confusion matrix and model results
 
-![alt text](pipeline.png)
+![alt text](C:\Users\flori\OneDrive\Dokumente\Visual Studio 2019\Projekt Breast Cancer_Kopy\seer_breast_cancer/pipeline.png)
 
 test:
   
