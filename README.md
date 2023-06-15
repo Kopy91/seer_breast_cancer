@@ -4,11 +4,11 @@
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-*python3
-*pandas
-*numpy
-*matplotlib
-*sklearn
+* python3
+* pandas
+* numpy
+* matplotlib
+* sklearn
 
 
 # The Data
