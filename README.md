@@ -1,15 +1,15 @@
-# seer_breast_cancer
+# Seer_Breast_Cancer
 
 # Goal
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-* python3
-* pandas
-* numpy
-* matplotlib 
-* sklearn
-
+* [Python 3.11.4](https://www.python.org/downloads/release/python-3114/)
+* [Pandas 2.0.2](https://pandas.pydata.org/)
+* [Numpy 1.24.2](https://numpy.org/)
+* [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html)
+* [scikit-learn 1.2.2](https://scikit-learn.org/stable/)
+* [PDPbox 0.3.0](https://pdpbox.readthedocs.io/en/latest/)
 
 # The Data
 The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
@@ -36,24 +36,30 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 
 
 # Data Processing
-TODO: choice of the model, complete pipeline as image
-
-After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
+After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the RandomForest provided the best scoring in F1.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
+Feature engineering:
+*  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
+*  one hot encoding nominal categorical features
+*  relabeling ordinal categorical features
+*  scaling for polynomial features
+*  creating polynomial features
+*  fitting/predicting our random forest model
 
-
+![Our data flow](pipeline.png)
 
 
 # Metrics
-TODO: show final confusion matrix and model results
+We compared different models, and choose a Random Forest Classifier with polynomial feature to degree two. 
 
-![alt text](pipeline.png)
+![Comparison of models](Vergleich_der_Modelle.png)
+
+![Confusion matrix](confusion_matrix.png)
 
 test:
   
 # Model Interpretation
-
-The model predicts survival rates from breast cancer.
+We use our model to examine the influence of each feature on our predictions.
 
 ![Proportions of features for prediction](feature_importances.png)
 
