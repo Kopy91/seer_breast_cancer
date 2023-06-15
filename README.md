@@ -53,7 +53,7 @@ Feature engineering:
 ![Our data flow](graphs/pipeline.png)
 
 # Metrics
-We compared different models and chose a RandomForest classifier with polynomial features of second degree. 
+Comparing different models, RandomForest classifier with polynomial features of second degree yielded the best results. 
 
 ![Comparison of models](graphs/Vergleich_der_Modelle.png)
 
