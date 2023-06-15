@@ -53,9 +53,8 @@ Feature engineering:
 ![Our data flow](graphs/pipeline.png)
 
 # Metrics
-We compared different models and chose a Random Forest Classifier with polynomial features of second degree. 
+We compared different models and chose a RandomForest classifier with polynomial features of second degree. 
 
-<<<<<<< HEAD
 ![Comparison of models](graphs/Vergleich_der_Modelle.png)
 
 ![Confusion matrix](graphs/confusion_matrix.png)
@@ -63,7 +62,7 @@ We compared different models and chose a Random Forest Classifier with polynomia
 ![Classification report](graphs/classification_report.png)
   
 # Model Interpretation
-Extracting feature importances and using partial dependence plots to examine the influence of selected features on predictions.
+Extracting feature importances and using partial dependence plots (PDP) to examine the influence of selected features on predictions.
 
 ![Proportions of features for prediction](graphs/feature_importances.png)
 
