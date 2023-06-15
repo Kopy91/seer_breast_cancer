@@ -44,7 +44,7 @@ Feature engineering:
 *  relabeling ordinal categorical features
 *  scaling for polynomial features
 *  creating polynomial features
-*  fitting our random forest model
+*  fitting/predicting our random forest model
 
 ![Our data flow](pipeline.png)
 
