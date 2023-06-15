@@ -54,4 +54,12 @@ test:
 
 The model predicts survival rates from breast cancer.
 
-It is worth noticing, that ***
+![Proportions of features for prediction](feature_importances.png)
+
+![Partial Dependence Plot for SurvivalMonths](pdp_survivalmonths.png)
+
+![[Partial Dependence Plot for Node_Exam_Pos_Rate](pdp_node_exam_pos_rate.png)
+
+![Partial Dependence Plot for RegionalNodePositive](pdp_regionalnodepositive.png)
+
+![Partial Dependence Plot for TumorSize](pdp_tumor_size.png)
