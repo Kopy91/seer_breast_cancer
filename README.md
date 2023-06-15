@@ -62,7 +62,7 @@ We compared different models, and chose a Random Forest Classifier with polynomi
 ![Classification report](graphs/classification_report.png)
   
 # Model Interpretation
-We extract feature importances and use partial dependence plots to examine the influence of the features on our model.
+We extract feature importances and use partial dependence plots to examine the influence of selected features on our target variable.
 
 ![Proportions of features for prediction](graphs/feature_importances.png)
 
