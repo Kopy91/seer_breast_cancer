@@ -53,8 +53,6 @@ test:
   
 # Model Interpretation
 
-![Proportions of features for prediction](feature_importances.png)
-
 The model predicts survival rates from breast cancer.
 
 ![Proportions of features for prediction](feature_importances.png)
