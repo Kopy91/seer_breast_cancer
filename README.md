@@ -35,7 +35,7 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 * Status: ['Alive', 'Dead'] Any patient that dies after the follow-up cut-off date is recoded to be alive as of the cut-off date.
 
 
-# The Data Processing
+# Data Processing
 TODO: choice of the model, complete pipeline as image
 
 After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
