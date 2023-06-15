@@ -7,7 +7,7 @@ The goal was to create a classifying model that is able to take the data of the 
 * [Python 3.11.4](https://www.python.org/downloads/release/python-3114/)
 * [Pandas 2.0.2](https://pandas.pydata.org/)
 * [Numpy 1.24.2](https://numpy.org/)
-* [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html))
+* [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html)
 * [scikit-learn 1.2.2](https://scikit-learn.org/stable/)
 
 # The Data
