@@ -4,11 +4,11 @@
 The goal was to create a classifying model that is able to take the data of the patient and determine whether the model predicts the patient will survive or not and output how confident it is in such a prediction.
 
 # Requirements
-*python3
-*pandas
-*numpy
-*matplotlib
-*sklearn
+* python3
+* pandas
+* numpy
+* matplotlib
+* sklearn
 
 
 # The Data
@@ -35,7 +35,7 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 * Status: ['Alive', 'Dead'] Any patient that dies after the follow-up cut-off date is recoded to be alive as of the cut-off date.
 
 
-# The Data Processing
+# Data Processing
 TODO: choice of the model, complete pipeline as image
 
 After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
@@ -47,11 +47,22 @@ All necessary steps were included in Pipelines (transforming columns, encoding a
 # Metrics
 TODO: show final confusion matrix and model results
 
-test:
-![Alt text](Untitled-1.png)
+![alt text](pipeline.png)
 
+test:
+  
 # Model Interpretation
+
+![Proportions of features for prediction](feature_importances.png)
 
 The model predicts survival rates from breast cancer.
 
-It is worth noticing, that ***
+![Proportions of features for prediction](feature_importances.png)
+
+![Partial Dependence Plot for SurvivalMonths](pdp_survivalmonths.png)
+
+![[Partial Dependence Plot for Node_Exam_Pos_Rate](pdp_node_exam_pos_rate.png)
+
+![Partial Dependence Plot for RegionalNodePositive](pdp_regionalnodepositive.png)
+
+![Partial Dependence Plot for TumorSize](pdp_tumor_size.png)
