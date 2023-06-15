@@ -7,7 +7,7 @@ The goal was to create a classifying model that is able to take the data of the 
 * python3
 * pandas
 * numpy
-* matplotlib
+* matplotlib 
 * sklearn
 
 
