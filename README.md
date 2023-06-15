@@ -47,7 +47,7 @@ All necessary steps were included in Pipelines (transforming columns, encoding a
 # Metrics
 TODO: show final confusion matrix and model results
 
-
+![alt text](pipeline.png)
 
 test:
   
