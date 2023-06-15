@@ -11,11 +11,11 @@ The goal of this project was to create a prototype of a classification model tha
 * [Matplotlib 3.7.1](https://matplotlib.org/stable/index.html)
 * [scikit-learn 1.2.2](https://scikit-learn.org/stable/)
 * [PDPbox 0.3.0](https://pdpbox.readthedocs.io/en/latest/)
-* for details see install instructions in Requirements.txt
+* for details see install instructions in requirements.txt
 
 
 # The Data
-The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled]([https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer)), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
+The data are from the Kaggle competition [Seer Breast Cancer Data - Labeled](https://link-url-here.org](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer), which is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
 The target variable contains the values 'Alive' and 'Dead'. Any patient that died after the follow-up cut-off in 2017 was recorded to be alive as of the cut-off date. 
 
 The data set consists of the following variables:
