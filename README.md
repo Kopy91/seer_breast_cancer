@@ -49,27 +49,26 @@ Feature engineering:
 *  creating polynomial features
 *  fitting/predicting our random forest model
 
-![Our data flow](pipeline.png)
-
+![Our data flow](graphs/pipeline.png)
 
 # Metrics
 We compared different models, and chose a Random Forest Classifier with polynomial feature to degree two. 
 
-![Comparison of models](Vergleich_der_Modelle.png)
+![Comparison of models](graphs/Vergleich_der_Modelle.png)
 
-![Confusion matrix](confusion_matrix.png)
+![Confusion matrix](graphs/confusion_matrix.png)
 
-![Classification report](classification_report.png)
+![Classification report](graphs/classification_report.png)
   
 # Model Interpretation
-We extract freature importances and use partial dependence plots to examine the influence of the features on our model.
+We extract feature importances and use partial dependence plots to examine the influence of the features on our model.
 
-![Proportions of features for prediction](feature_importances.png)
+![Proportions of features for prediction](graphs/feature_importances.png)
 
-![Partial Dependence Plot for SurvivalMonths](pdp_survivalmonths.png)
+![Partial Dependence Plot for SurvivalMonths](graphs/pdp_survivalmonths.png)
 
-![Partial Dependence Plot for Node_Exam_Pos_Rate](pdp_node_exam_pos_rate.png)
+![Partial Dependence Plot for Node_Exam_Pos_Rate](graphs/pdp_node_exam_pos_rate.png)
 
-![Partial Dependence Plot for RegionalNodePositive](pdp_regionalnodepositive.png)
+![Partial Dependence Plot for RegionalNodePositive](graphs/pdp_regionalnodepositive.png)
 
-![Partial Dependence Plot for TumorSize](pdp_tumor_size.png)
+![Partial Dependence Plot for TumorSize](graphs/pdp_tumor_size.png)
