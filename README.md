@@ -36,16 +36,17 @@ Distant — A neoplasm that has spread to parts of the body remote from the prim
 
 
 # Data Processing
-TODO: choice of the model, complete pipeline as image
-
-After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
+After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the RandomForest provided the best scoring in F1.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
+Feature engineering:
+*  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
+*  one hot encoding nominal categorical features
+*  relabeling ordinal categorical features
 
-![alt text](pipeline.png)
+![Our data flow](pipeline.png)
 
 
 # Metrics
-
 We compared different models, and choose a Random Forest Classifier with polynomial feature to degree two. 
 
 ![Comparison of models](Vergleich_der_Modelle.png)
@@ -55,8 +56,7 @@ We compared different models, and choose a Random Forest Classifier with polynom
 test:
   
 # Model Interpretation
-
-The model predicts survival rates from breast cancer.
+We use our model to examine the influence of each feature on our predictions.
 
 ![Proportions of features for prediction](feature_importances.png)
 
