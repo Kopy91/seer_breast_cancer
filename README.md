@@ -41,13 +41,16 @@ TODO: choice of the model, complete pipeline as image
 After testing and optimizing multpliple models with GridSearches (DecisionTree, RandomForest, Logistic Regression and Support Vector Machine), the Decisiontree provided the best scoring in F1 at aroung 0.74.
 All necessary steps were included in Pipelines (transforming columns, encoding and instantiating models).
 
-
+![alt text](pipeline.png)
 
 
 # Metrics
-TODO: show final confusion matrix and model results
 
-![alt text](pipeline.png)
+We compared different models, and choose a Random Forest Classifier with polynomial feature to degree two. 
+
+![Comparison of models](Vergleich_der_Modelle.png)
+
+![Confusion matrix](confusion_matrix.png)
 
 test:
   
