@@ -55,7 +55,7 @@ Feature engineering:
 # Metrics
 We compared different models, and chose a Random Forest Classifier with polynomial feature to degree two. 
 
-![Comparison of models](https://github.com/Kopy91/graphs/Vergleich_der_Modelle.png)
+![Comparison of models]([https://github.com/Kopy91/seer_breast_cancer/graphs/Vergleich_der_Modelle.png)
 
 ![Confusion matrix](confusion_matrix.png)
 
