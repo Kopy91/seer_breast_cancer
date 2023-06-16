@@ -46,7 +46,7 @@ Feature engineering:
 *  introducing new features 'Node_Exam_Pos_Rate' and 'Estrogen_Progesteron_Status'
 *  one-hot-encoding nominal categorical features
 *  relabeling ordinal categorical features
-*  scaling for polynomial features
+*  scaling before polynomial features
 *  creating polynomial features
 *  fitting/predicting RandomForest model
 
