@@ -16,7 +16,7 @@ Scoring results in F1 and recall were the deciding factor for which model will b
 
 
 # Dataset
-The data is from the aggle website [Seer Breast Cancer Data - Labeled](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer). It is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
+The data is from the Kaggle website [Seer Breast Cancer Data - Labeled](https://www.kaggle.com/datasets/reihanenamdari/breast-cancer). It is based on the SEER Program of the NCI from 2017 November, providing information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer (SEER primary cites recode NOS histology codes 8522/3) diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded; thus, 4024 patients were ultimately included.
 The target variable contains the values 'Alive' and 'Dead'. Any patient that died after the follow-up cut-off in 2017 was recorded to be alive as of the cut-off date. 
 
 The dataset consists of the following variables:
